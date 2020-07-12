@@ -14,13 +14,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 0;
+    margin-top: 0;
     height: 110px;
+    margin-bottom: 33px;
   }
   
-  .headerlogo img {
+  .header__logo img {
     margin-left: 170px;
-    top: 34px;
+    margin-top: 34px;
     width: 135px;
     height: 43px;
     object-fit: contain;
@@ -30,19 +31,18 @@ body {
     display: flex;
     width: 750px;
     justify-content: space-between;
-    font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
     color: #333333;
-    top: 47px;
+    margin-top: 47px;
   }
 
-  .header__btn {
+  .header__button {
     width: 200px;
     height: 48px;
-    top: 32px;
+    margin-top: 33px;
     margin-right: 170px;
     border: 2px solid #333333;
     border-radius: 5px;
@@ -57,26 +57,25 @@ body {
     line-height: 24px;
   }
 
-  .panel1 {
+  .banner1 {
     display: flex;
     align-items: center;
     position: relative;
   }
 
-  .panel1 img {
+  .banner1 img {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .panel1__text {
+  .banner1__text {
     z-index: 1;
     position: absolute;
     width: 567px;
     margin-left: 378px;
   }
 
-  .panel1__text h1 {
-    font-family: Gilroy;
+  .banner1__text h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -85,8 +84,7 @@ body {
     margin-top: 0;
   }
 
-  .panel1__text p {
-    font-family: Gilroy;
+  .banner1__text p {
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -94,7 +92,7 @@ body {
     margin-bottom: 46px;
   }
 
-  .panel1__btn {
+  .banner1__button {
     font-family: Gilroy;
     font-style: normal;
     font-weight: bold;
@@ -259,21 +257,31 @@ body {
 
   .ul1 {
     list-style: none;
-    margin: 0;
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    line-height: 28px;
     padding: 0;
   }
 
-  .ul1 li:before {
-    content: '+ ';
+  .ul1 li::before {
+    content: '+';
     color: blue;
+    margin-right: 10px;
   }
 
   .ul2 {
-    list-style-type: '- ';
+    list-style-type: none;
     color: red;
-    margin-left: 14px;
+    font-size: 18px;
+    line-height: 28px;
     margin-block-start: 0;
     padding: 0;
+  }
+
+  .ul2 li::before {
+    content: '-';
+    color: red;
+    margin-right: 10px;
   }
 
   .panel4__4 {
@@ -410,7 +418,19 @@ body {
 
   .panel6__container {
     display: flex;
-    margin: 50px 0 40px 0;
+    height: 400px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-top: 40px;
+    margin-right: 50px;
+
+  }
+
+  .panel6__img:hover > .panel6__image-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
   }
 
   .panel6__img img {
@@ -420,11 +440,38 @@ body {
     background-color: white;
   }
 
+  .panel6__image-hover {
+    display: none;
+    background-color: #3454F5;
+    opacity: 0.9;
+    border-radius: 15px;
+    width: 680px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -404px;
+  }
+
+  .panel6__image-hover text {
+    margin-top: 16px;
+  }
+
+  .panel6__image-hover img {
+    background-color: #3454f5;
+    width: 48px;
+    height: 48px;
+  }
+
   .p6_cont1, .p6_cont2, .p6_cont3 {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-left: 50px;
+    height: 400px;
   }
 
   .p6_cont1 img, .p6_cont2 img, .p6_cont3 img {
@@ -482,6 +529,7 @@ body {
     color: #FFFFFF;
     padding-left: 370px;
     height: 460px;
+    margin-top: 140px;
   }
 
   .panel7 h2 {
@@ -644,12 +692,11 @@ body {
 
   .panel8__container img {
     display: flex;
-    margin-top: 0px;
     position: absolute;
     width: 300px;
     height: 300px;
     border-radius: 0px;
-    background: 0px;
+    background: 0;
     margin-top: 160px;
     margin-left: 80px;
   }
@@ -753,9 +800,15 @@ body {
     margin-top: 12px;
   }
 
-  .footer__contact p {
-    margin-left: 16px;
-    margin-block-start: 0px;
+  .footer__contact a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .footer__contact img {
+    margin-right: 16px;
+    width: 20px;
+    height: 20px;
   }
 
   .footer__links {

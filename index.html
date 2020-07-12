@@ -5,49 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TSEKH.quest</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-    <style>
-      body {
-        font:18px 'Gilroy', sans-serif;
-      }
-    </style>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="https://static.tildacdn.com/tild3939-3934-4236-a131-656333376236/ico2.ico" type="image/x-icon">
   </head>
   <body>
     <div class="header">
-      <div class="headerlogo">
+      <div class="header__logo">
         <a href="https://tsekh.design">
           <img src="svg\TSEKH-logo.svg">
         </a>
       </div>
       <div class="navbar">
-        <div class="navbar__1st">
+        <div class="navbar__item">
           <p>Студия</p>
         </div>
-        <div class="navbar__2nd">
+        <div class="navbar__item">
           <p>Горячий ЦЕХ</p>
         </div>
-        <div class="navbar__3rd">
+        <div class="navbar__item">
           <p>Проекты</p>
         </div>
-        <div class="navbar__4th">
+        <div class="navbar__item">
           <p>Тариф</p>
         </div>
-        <div class="navbar__5th">
+        <div class="navbar__item">
           <p>Блог</p>
         </div>
-        <div class="navbar__6th">
+        <div class="navbar__item">
           <p>Работа у нас</p>
         </div>
       </div>
-      <button class="header__btn">Рассчитать проект</button>
+      <button class="header__button">Рассчитать проект</button>
     </div>
-    <div class="panel1">
+    <div class="banner1">
       <img src="img/p1.jpg">
-      <div class="panel1__text">
+      <div class="banner1__text">
         <h1>Простая разработка</h1>
         <p>Фронтенд и бэкенд разработка корпоративных порталов и интернет-каталогов. Простые интеграции по приемлемой стоимости.</p>
-        <button class="panel1__btn">Заказать расчет проекта</button>
+        <button class="banner1__button">Заказать расчет проекта</button>
       </div>  
     </div>
     <div class="panel2">
@@ -98,18 +93,18 @@
         <img src="img/p4_1.jpg">
         <div class="panel4__cont-text">
           <h3>Корпоративные порталы</h3>
-          Многостраничные сайты с комплексной информацией о компании.
+          <p>Многостраничные сайты с комплексной информацией о компании.</p>
           <p>История развития, направления деятельности, актуальные офферы, новости, бренды и типы товаров/услуг в каталоге и т. д.</p>
-          Удобная CMS, чтобы вы могли самостоятельно добавлять и корректировать информацию, создавать новые типовые страницы и удалять неактуальные.
+          <p>Удобная CMS, чтобы вы могли самостоятельно добавлять и корректировать информацию, создавать новые типовые страницы и удалять неактуальные.</p>
         </div>
       </div>
       <div class="panel4__container">
         <img src="img/p4_2.jpg">
         <div class="panel4__cont-text">
           <h3>Каталоги товаров</h3>
-          С фотографиями, описаниями, техническими характеристиками и ценами на каждый товар.
+          <p>С фотографиями, описаниями, техническими характеристиками и ценами на каждый товар.</p>
           <p>Единственное отличие от интернет-магазина — товары нельзя купить на сайте напрямую.</p>
-          Интеграция с CRM для управления каталогом и отдельными товарами.
+          <p>Интеграция с CRM для управления каталогом и отдельными товарами.</p>
         </div>
       </div>
       <div class="panel4__container">
@@ -170,6 +165,10 @@
       <div class="panel6__container">
         <div class="panel6__img">
           <img class="p6_img" src="img/p6_1.jpg">
+          <div class="panel6__image-hover">
+            <img class="arrow" src="svg/arrow.svg">
+            Смотреть проект
+          </div>
         </div>
         <div class="p6_cont1">
           <h3>Интернет магазин для Снежной Королевы</h3>
@@ -191,6 +190,10 @@
       <div class="panel6__container">
         <div class="panel6__img">
           <img class="p6_img" src="img/p6_2.jpg">
+          <div class="panel6__image-hover">
+            <img class="arrow" src="svg/arrow.svg">
+            Смотреть проект
+          </div>
         </div>
         <div class="p6_cont2">
           <h3>Интернет магазин для Maximum</h3>
@@ -212,6 +215,10 @@
       <div class="panel6__container">
         <div class="panel6__img">
           <img class="p6_img" src="img/p6_3.jpg">
+          <div class="panel6__image-hover">
+            <img class="arrow" src="svg/arrow.svg">
+            Смотреть проект
+          </div>
         </div>
         <div class="p6_cont3">
           <h3>Логотип для MobiApp</h3>
@@ -384,12 +391,16 @@
         <div class="footer__container">
           <h3>Всегда на связи</h3>
           <div class="footer__contact">
-            <img src="svg/mail.svg">
-            <p>hello@tsekh.design</p>
+            <a href="mailto:hello@tsekh.design">
+              <img src="svg/mail.svg">
+              hello@tsekh.design
+            </a>
           </div>
           <div class="footer__contact">
-            <img src="svg/phone.svg">
-            <p>+7 495 369 20 29</p>
+            <a href="tel:+74953692029">
+              <img src="svg/phone.svg">
+              +7 495 369 20 29
+            </a>
           </div>
         </div>
         <div class="footer__container">
