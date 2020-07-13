@@ -224,6 +224,10 @@ body {
     display: flex;
   }
 
+  .banner2 img {
+    width: -webkit-fill-available;
+  }
+
   .banner2__container {
     position: absolute;
     width: 750px;
