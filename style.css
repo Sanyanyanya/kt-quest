@@ -224,7 +224,7 @@ body {
     display: flex;
   }
 
-  .banner2 img {
+  .banner2__image {
     width: -webkit-fill-available;
   }
 
@@ -467,6 +467,7 @@ body {
     height: 400px;
     border-radius: 15px;
     background-color: white;
+    position: absolute;
   }
 
   .case__image-hover {
@@ -482,7 +483,6 @@ body {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    margin-top: -404px;
     cursor: pointer
   }
 
@@ -500,7 +500,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 730px;
     height: 400px;
   }
 
